@@ -1,6 +1,6 @@
 # Ubuntu 19.10 Vagrant VM: PHP 7.3
 * Git
-* Apache
+* Apache2
 * PHP V7.3
 * MySQL V5.7
 * Redis
@@ -15,7 +15,7 @@
 ## Instala el Software Base
 1. Instalar [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
 2. Instalar [Vagrant](https://www.vagrantup.com)
-3. Clona el proyecto `git clone git@github.com:<user>/ubuntu-lemp-php7.git lemp7`
+3. Clona el proyecto `git clone git@github.com:<user>/ubuntu-lamp-php7.git lamp7`
 
 ## Instala Plugins Base de Vagrant
 ```
@@ -26,8 +26,8 @@ vagrant plugin install vagrant-hostmanager
 ## Pasos
 1. Ve al directorio donde está ubicado el archivo README.md (`cd lemp7`)
 2. Ejecuta `vagrant up`
-3. Verifica que tu archivo hosts tenga la siguiente linea de instrucción `192.168.2.3  lemp7.vh`
-4. Visita en tu navegador el siguiente enlace [lemp7](http://lemp7.vh)
+3. Verifica que tu archivo hosts tenga la siguiente linea de instrucción `192.168.2.4  lamp7.vh`
+4. Visita en tu navegador el siguiente enlace [lemp7](http://lamp7.vh)
 
 # Adicionales
 
