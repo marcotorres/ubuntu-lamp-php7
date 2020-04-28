@@ -34,9 +34,9 @@ Vagrant.configure(2) do |config|
     end
 
     config.vm.synced_folder "www/", "/var/www", 
-        owner: "vagrant",
-        group: "vagrant",
+        owner: "www-data",
+        group: "www-data",
         mount_options: ["dmode=775,fmode=664"]
 
-    #config.vm.provision "shell", path: "./console/provision.sh"
+    config.vm.provision "shell", path: "./console/provision.sh"
 end

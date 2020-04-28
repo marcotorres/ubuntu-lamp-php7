@@ -62,7 +62,7 @@ phpGo() {
   echo -e "----------------------------------------" && \
   sudo apt-get install -y php7.3-fpm php7.3-mysql php7.3-phpdbg php7.3-mbstring php7.3-gd php-imagick && \
   sudo apt-get install -y php7.3-pgsql php7.3-pspell php7.3-recode php7.3-tidy php7.3-intl php7.3-curl && \
-  sudo apt-get install -y php7.3-zip php7.3-xml php7.3-dev php-memcached mcrypt memcached phpunit && \
+  sudo apt-get install -y php7.3-zip php7.3-xml php7.3-dev libapache2-mod-php7.3 php-memcached mcrypt memcached phpunit && \
   sudo cp /vagrant/data/php/lamp.ini /etc/php/7.3/mods-available/lamp.ini && \
   sudo chmod 644 /etc/php/7.3/mods-available/lamp.ini && \
   sudo ln -s /etc/php/7.3/mods-available/lamp.ini /etc/php/7.3/cli/conf.d/100-lamp.ini && \
